@@ -34,6 +34,5 @@ def print_robot_info(msg):
 
 if __name__ == "__main__":
     rospy.init_node('rob_position')
-    frequency_param = rospy.get_param("frequency")
     pos_vel_subscriber = rospy.Subscriber("/pos_vel", Vel_pos_xy, print_robot_info)
     rospy.spin()
