@@ -13,7 +13,7 @@ A launch file has been constructed to initiate the entire simulation
 
 ## Action Node structure
 ----------------------
-[RT_assign2_Flowchart.pdf](https://github.com/AmaniGhm/RT_Assignment2_Amani_Ghomrani-/files/13929664/RT_assign2_Flowchart.pdf)
+![RT_assign2_Flowchart.pdf](https://github.com/AmaniGhm/RT_Assignment2_Amani_Ghomrani-/files/13929664/RT_assign2_Flowchart.pdf)
 
 
 ## How to RUN the code
