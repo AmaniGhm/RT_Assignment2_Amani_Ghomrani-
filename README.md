@@ -2,7 +2,7 @@
 ----------------------
 In this assignment, a ROS package was created to manage a robot's movement and acquire data regarding its position and speed. The package comprises three nodes:
 
-(a) An action client node which enables user to set a target (x, y) or cancel it. Utilizing the feedback/status of the action server, I ensured awareness of when the target has been reached. Additionally, this node publishes the robot's position and velocity as a vel_pos message (pos_x, pos_y, vel_x, vel_y) by extracting values from the /odom topic.
+(a) An action client node which enables user to set a target (x, y) or cancel it. Utilizing the feedback/status of the action server, I ensured awareness of when the target has been reached. Additionally, this node publishes the robot's position and velocity as a vel_pos message (pos_x, pos_y, vel_x, vel_z) by extracting values from the /odom topic.
 
 (b) A service node has been implemented to return the coordinates of the last target sent by the user upon invocation.
 
