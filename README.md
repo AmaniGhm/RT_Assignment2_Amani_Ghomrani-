@@ -20,7 +20,7 @@ A launch file has been constructed to initiate the entire simulation
 ## How to RUN the code
 -----------------------------
 First you need to clone this repository inside the src file of your ROS workspace
-Second run the command : 
+Then run the command : 
 ```bash
 $ catkin_make
 ```
