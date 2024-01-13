@@ -19,7 +19,12 @@ A launch file has been constructed to initiate the entire simulation
 
 ## How to RUN the code
 -----------------------------
-First you need to make the python scripts executable using the command :
+First you need to clone this repository inside the src file of your ROS workspace
+Second run the command : 
+```bash
+$ catkin_make
+```
+Then you need to make the python scripts executable using the command :
 
 ```bash
 $ chmod +x action_client.py bug_as.py go_to_point_service.py last_trgt_coord_service.py position_node.py wall_follow_service.py 
@@ -29,3 +34,7 @@ Then to launch the package you need to execute assignment1.launch file use the f
 ```bash
 $  roslaunch assignment_2_2023 assignment1.launch  
 ```
+## How it works
+The after executing the launch file the user will see 2 terminals and one Gazibo window and a Rviz window
+   - The first terminal allows the user to enter the (x,y) of the goal position
+   - The second terminal displays the distance and velocity or the robot
