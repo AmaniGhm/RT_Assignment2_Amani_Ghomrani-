@@ -3,13 +3,16 @@
 import rospy
 import math
 import time
-from assignment_2_2023.msg import Vel_pos_xy
+from assignment_2_2023.msg import RobotState
+from assignment_2_2023.srv import GetDistSpeed, GetDistSpeedResponse
 
 previous_print_time = 0
 frequency_param = 1.0
+distance = 0
+average_speed = 0
 
 def print_robot_info(msg):
-    global previous_print_time, frequency_param
+    global previous_print_time, frequency_param, distance, average_speed
     time_period = (1.0/frequency_param) * 1000
     current_time = time.time() * 1000
 
@@ -19,8 +22,8 @@ def print_robot_info(msg):
         target_y = rospy.get_param("des_pos_y")
 
         # get the current robot position
-        current_x = msg.pos_x
-        current_y = msg.pos_y
+        current_x = msg.x
+        current_y = msg.y
 
         # Calculate the distance and the speed
         distance = math.dist([target_x, target_y], [current_x, current_y])
@@ -32,7 +35,21 @@ def print_robot_info(msg):
 
         previous_print_time = current_time
 
+def dist_velocity_callbk(rsp):
+    global distance, average_speed
+
+    # Service callback to update the distace and the average speed of the robot
+    response = GetDistSpeedResponse()
+    response.distance = distance
+    response.average_speed = average_speed
+    return response
+
 if __name__ == "__main__":
     rospy.init_node('rob_position')
-    pos_vel_subscriber = rospy.Subscriber("/pos_vel", Vel_pos_xy, print_robot_info)
+
+    # service that store the velocity and average speed of the robot
+    distance_velocity_service = rospy.Service('distance_velocity_from_target', GetDistSpeed, dist_velocity_callbk)
+    
+    # Subscriber to the robot_state
+    pos_vel_subscriber = rospy.Subscriber("/robot_state", RobotState, print_robot_info)
     rospy.spin()

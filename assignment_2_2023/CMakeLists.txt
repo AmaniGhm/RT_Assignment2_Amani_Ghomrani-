@@ -58,12 +58,14 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   Vel_pos_xy.msg
+  RobotState.msg
 )
 
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
   Getlasttarget.srv
+  GetDistSpeed.srv
 )
 
 ## Generate actions in the 'action' folder
