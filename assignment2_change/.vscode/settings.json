@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/root/ros_ws/devel/lib/python3/dist-packages",
+        "/root/ros_workspace/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/root/ros_ws/devel/lib/python3/dist-packages",
+        "/root/ros_workspace/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}
