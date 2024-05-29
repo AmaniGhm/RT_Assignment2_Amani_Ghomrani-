@@ -1,0 +1,76 @@
+2024-02-27 14:07:33.738 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'registerIssueDataProvider' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2024-02-27 14:07:35.790 [info] Started local extension host with pid 672.
+2024-02-27 14:07:38.179 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarVisibility.variant.description.
+2024-02-27 14:07:39.469 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2024-02-27 14:07:48.676 [info] [perf] Render performance baseline is 342ms
+2024-02-27 14:07:53.901 [error] net::ERR_INSUFFICIENT_RESOURCES: Error: net::ERR_INSUFFICIENT_RESOURCES
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:49876)
+    at SimpleURLLoaderWrapper.emit (node:events:513:28)
+2024-02-27 14:08:17.914 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:17.922 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:17.930 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:17.932 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:17.937 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:17.957 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:17.972 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:17.974 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:17.977 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:17.979 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:18.253 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:18.256 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:30.395 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'registerIssueDataProvider' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2024-02-27 14:08:32.477 [info] Started local extension host with pid 849.
+2024-02-27 14:08:33.858 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:33.861 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:33.863 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:33.868 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:33.871 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:33.873 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:33.875 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:33.877 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:33.879 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:33.881 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:33.884 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:33.886 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:43.645 [info] [perf] Render performance baseline is 434ms
+2024-02-27 14:08:45.126 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:45.128 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:45.129 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:45.131 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:45.133 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:45.134 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:45.136 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:45.137 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:45.139 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:45.141 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:45.143 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:45.144 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-02-27 14:08:45.345 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2024-02-27 14:08:51.355 [info] Extension host (LocalProcess pid: 849) is unresponsive.
+2024-02-27 14:08:51.849 [info] Extension host (LocalProcess pid: 849) is responsive.
+2024-02-27 14:08:51.851 [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+2024-02-27 14:08:52.066 [error] Error: Aborted onWillSaveTextDocument-event after 1750ms
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1899:12495
+2024-02-27 14:08:55.102 [info] Extension host (LocalProcess pid: 849) is unresponsive.
+2024-02-27 14:08:55.865 [info] UNRESPONSIVE extension host: starting to profile NOW
+2024-02-27 14:08:56.120 [info] Extension host (LocalProcess pid: 849) is responsive.
+2024-02-27 14:08:56.557 [warning] UNRESPONSIVE extension host: 'ms-vscode.cpptools' took 39.33649289099526% of 5.395ms, saved PROFILE here: 'file:///tmp/exthost-66a560.cpuprofile'
+2024-02-27 14:08:59.531 [error] Error: Aborted onWillSaveTextDocument-event after 1750ms
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1899:12495
+2024-02-27 14:09:18.224 [info] Extension host (LocalProcess pid: 849) is unresponsive.
+2024-02-27 14:09:21.544 [error] Unknown error while installing extension ms-vscode.cpptools: Error: Unknown error while installing extension ms-vscode.cpptools
+    at Y.installFromGallery (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:100:62713)
+2024-02-27 14:09:22.711 [info] UNRESPONSIVE extension host: starting to profile NOW
+2024-02-27 14:09:23.956 [info] Extension host (LocalProcess pid: 849) is responsive.
+2024-02-27 14:09:23.959 [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+2024-02-27 14:09:25.238 [warning] UNRESPONSIVE extension host: 'ms-python.vscode-pylance' took 94.11847390515037% of 1185.153ms, saved PROFILE here: 'file:///tmp/exthost-64f884.cpuprofile'
+2024-02-27 14:09:32.583 [info] Extension host (LocalProcess pid: 849) is unresponsive.
+2024-02-27 14:09:35.260 [info] UNRESPONSIVE extension host: starting to profile NOW
+2024-02-27 14:09:36.436 [info] Extension host (LocalProcess pid: 849) is responsive.
+2024-02-27 14:09:36.439 [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+2024-02-27 14:09:51.609 [error] Unknown error while installing extension ms-python.vscode-pylance: Error: Unknown error while installing extension ms-python.vscode-pylance
+    at Y.installFromGallery (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:100:62713)
+2024-02-27 14:38:17.356 [error] Cannot read properties of undefined (reading 'data'): TypeError: Cannot read properties of undefined (reading 'data')
+	at /root/.vscode/extensions/ms-python.vscode-pylance-2023.12.1/dist/extension.bundle.js:1:139734
+	at _0x1be708 (/root/.vscode/extensions/ms-python.vscode-pylance-2023.12.1/dist/extension.bundle.js:1:152918)
+	at async ve.provideCompletionItems (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:143:53055)

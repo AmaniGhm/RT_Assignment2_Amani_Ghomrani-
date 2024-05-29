@@ -1,0 +1,76 @@
+2024-02-27 14:09:04.766 [info] Experiment 'pythonaa' is active
+2024-02-27 14:09:04.768 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2024-02-27 14:09:04.769 [info] Experiment 'pythonREPLSmartSend' is active
+2024-02-27 14:09:04.770 [info] Experiment 'pythonSurveyNotificationcf' is active
+2024-02-27 14:09:04.772 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2024-02-27 14:09:04.773 [info] Experiment 'pythonTestAdapter' is active
+2024-02-27 14:09:06.006 [info] Default formatter is set to null for workspace /root/ros_ws/src/assignment_2_2023
+2024-02-27 14:09:07.075 [info] Test server listening.
+2024-02-27 14:09:07.163 [info] > conda info --json
+2024-02-27 14:09:09.369 [info] Found: /bin/python --> /bin/python2.7
+2024-02-27 14:09:09.443 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2024-02-27 14:09:09.444 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2024-02-27 14:09:09.444 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2024-02-27 14:09:09.445 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2024-02-27 14:09:09.446 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2024-02-27 14:09:09.446 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2024-02-27 14:09:09.446 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2024-02-27 14:09:10.074 [info] Found: /bin/python2 --> /bin/python2.7
+2024-02-27 14:09:10.286 [info] Found: /bin/python2.7 --> /bin/python2.7
+2024-02-27 14:09:10.449 [info] Found: /bin/python3 --> /bin/python3.8
+2024-02-27 14:09:10.467 [info] Found: /bin/python3.8 --> /bin/python3.8
+2024-02-27 14:09:24.652 [info] Found: /usr/bin/python --> /usr/bin/python2.7
+2024-02-27 14:09:26.473 [info] Found: /usr/bin/python2 --> /usr/bin/python2.7
+2024-02-27 14:09:26.623 [info] Found: /usr/bin/python2.7 --> /usr/bin/python2.7
+2024-02-27 14:09:27.229 [info] Found: /usr/bin/python3 --> /usr/bin/python3.8
+2024-02-27 14:09:28.191 [info] Found: /usr/bin/python3.8 --> /usr/bin/python3.8
+2024-02-27 14:09:38.471 [info] Found: /usr/local/bin/python --> /usr/bin/python3.8
+2024-02-27 14:09:40.406 [info] > /bin/python -I ~/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/interpreterInfo.py
+2024-02-27 14:09:40.506 [warning] [Error: Command failed: /bin/python -I /root/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/get_output_via_markers.py /root/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/interpreterInfo.py
+Unknown option: -I
+usage: /bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+	at ChildProcess.exithandler (node:child_process:431:12)
+	at ChildProcess.emit (node:events:525:35)
+	at maybeClose (node:internal/child_process:1091:16)
+	at Socket.<anonymous> (node:internal/child_process:449:11)
+	at Socket.emit (node:events:513:28)
+	at Pipe.<anonymous> (node:net:322:12)] {
+  code: 2,
+  killed: false,
+  signal: null,
+  cmd: '/bin/python -I /root/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/get_output_via_markers.py /root/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/interpreterInfo.py'
+}
+2024-02-27 14:09:40.507 [error] Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+2024-02-27 14:09:40.592 [info] > /bin/python ~/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/interpreterInfo.py
+2024-02-27 14:09:40.717 [info] > /bin/python3 -I ~/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/interpreterInfo.py
+2024-02-27 14:09:40.943 [info] > /usr/bin/python -I ~/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/interpreterInfo.py
+2024-02-27 14:09:41.024 [warning] [Error: Command failed: /usr/bin/python -I /root/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/get_output_via_markers.py /root/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/interpreterInfo.py
+Unknown option: -I
+usage: /usr/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+	at ChildProcess.exithandler (node:child_process:431:12)
+	at ChildProcess.emit (node:events:525:35)
+	at maybeClose (node:internal/child_process:1091:16)
+	at Socket.<anonymous> (node:internal/child_process:449:11)
+	at Socket.emit (node:events:513:28)
+	at Pipe.<anonymous> (node:net:322:12)] {
+  code: 2,
+  killed: false,
+  signal: null,
+  cmd: '/usr/bin/python -I /root/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/get_output_via_markers.py /root/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/interpreterInfo.py'
+}
+2024-02-27 14:09:41.027 [error] Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+2024-02-27 14:09:41.118 [info] > /usr/bin/python ~/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/interpreterInfo.py
+2024-02-27 14:09:41.417 [info] > /usr/bin/python3 -I ~/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2023.22.1/pythonFiles/interpreterInfo.py
+2024-02-27 14:09:43.451 [info] Send text to terminal: echo /usr/bin/bash
+2024-02-27 14:09:43.784 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2024-02-27 14:09:43.801 [info] Python interpreter path: /bin/python3
+2024-02-27 14:09:46.638 [info] Shell integration is not working for bash
+2024-02-27 14:09:46.650 [warning] Shell integration is not active, environment activated maybe overriden by the shell.
+2024-02-27 14:09:52.088 [info] Starting Pylance language server.
+2024-02-27 14:32:17.263 [info] Discover tests for workspace name: assignment_2_2023 - uri: /root/ros_ws/src/assignment_2_2023/scripts/action_client_node.py
+2024-02-27 14:40:57.914 [info] Discover tests for workspace name: assignment_2_2023 - uri: /root/ros_ws/src/assignment_2_2023/scripts/action_client_node.py
+2024-02-27 15:09:17.712 [info] Discover tests for workspace name: assignment_2_2023 - uri: /root/ros_ws/src/assignment_2_2023/scripts/action_client_node.py

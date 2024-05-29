@@ -1,0 +1,13 @@
+2024-02-28 12:36:26.720 [error] electron #43: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_CERT_AUTHORITY_INVALID
+2024-02-28 13:06:31.842 [error] electron #49: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_NAME_NOT_RESOLVED
+2024-02-28 13:11:33.118 [error] electron #50: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_NAME_NOT_RESOLVED
+2024-02-28 13:16:34.150 [error] electron #51: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_NAME_NOT_RESOLVED
+2024-02-28 13:21:43.104 [error] electron #52: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_NAME_NOT_RESOLVED
+2024-02-28 13:26:43.857 [error] electron #53: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_NAME_NOT_RESOLVED
+2024-02-28 13:31:44.823 [error] electron #54: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_NAME_NOT_RESOLVED
+2024-02-28 13:36:45.813 [error] electron #55: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_NAME_NOT_RESOLVED
+2024-02-28 13:41:46.844 [error] electron #56: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_NAME_NOT_RESOLVED
+2024-02-28 13:46:48.196 [error] electron #57: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_NAME_NOT_RESOLVED
+2024-02-28 13:51:49.272 [error] electron #58: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_NAME_NOT_RESOLVED
+2024-02-28 13:56:51.001 [error] electron #59: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_NAME_NOT_RESOLVED
+2024-02-28 14:01:51.962 [error] electron #60: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_NAME_NOT_RESOLVED

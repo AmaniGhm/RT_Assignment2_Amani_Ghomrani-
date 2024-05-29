@@ -1,0 +1,1 @@
+Sourcing Environment using: bash --login -c "source '/root/ros_ws/devel/setup.bash' && env"

@@ -158,7 +158,7 @@ def main():
             elif state_ == 1:
                 go_straight_ahead(desired_position_)
             elif state_ == 2:
-                done()
+                done() 
             else:
                 rospy.logerr('Unknown state!')
 

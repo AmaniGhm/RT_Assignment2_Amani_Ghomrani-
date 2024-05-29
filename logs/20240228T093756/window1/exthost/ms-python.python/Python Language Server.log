@@ -1,0 +1,22 @@
+2024-02-28 09:38:23.951 [info] (Client) Pylance async client (2024.2.2) started with python extension (2024.0.1)
+2024-02-28 09:38:31.655 [info] [Info  - 9:38:31 AM] (575) Pylance language server 2024.2.2 (pyright version 1.1.348, commit cfb1de0c) starting
+2024-02-28 09:38:31.817 [info] [Info  - 9:38:31 AM] (575) Server root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist
+2024-02-28 09:38:31.910 [info] [Info  - 9:38:31 AM] (575) Starting service instance "assignment_2_2023"
+2024-02-28 09:38:33.048 [info] [Info  - 9:38:33 AM] (575) Setting pythonPath for service "assignment_2_2023": "/bin/python3"
+2024-02-28 09:38:33.151 [info] [Info  - 9:38:33 AM] (575) Setting environmentName for service "assignment_2_2023": "3.8.5 (global)"
+2024-02-28 09:38:33.953 [info] [Info  - 9:38:33 AM] (575) Assuming Python version 3.8
+2024-02-28 09:38:36.328 [info] [Info  - 9:38:36 AM] (575) Found 9 source files
+2024-02-28 09:38:39.468 [info] [Info  - 9:38:39 AM] (575) [FG] Long operation: parsing: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist/typeshed-fallback/stdlib/builtins.pyi (2256ms)
+2024-02-28 09:38:42.653 [info] [Info  - 9:38:42 AM] (575) Background analysis(1) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist
+2024-02-28 09:38:42.684 [info] [Info  - 9:38:42 AM] (575) Background analysis(1) started
+2024-02-28 09:38:46.254 [info] [Info  - 9:38:46 AM] (575) Indexer background runner(2) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist (index)
+2024-02-28 09:38:46.257 [info] [Info  - 9:38:46 AM] (575) Indexing(2) started
+2024-02-28 09:39:02.980 [info] [Info  - 9:39:02 AM] (575) [BG(1)] Long operation: getSemanticTokens range 0:0 - 62:26 at file:///root/ros_ws/src/assignment_2_2023/scripts/action_client_node.py (20243ms)
+2024-02-28 09:39:06.439 [info] [Info  - 9:39:06 AM] (575) [BG(1)] Long operation: checking: file:///root/ros_ws/src/assignment_2_2023/scripts/action_client_node.py (3417ms)
+2024-02-28 09:39:06.445 [info] [Info  - 9:39:06 AM] (575) [BG(1)] Long operation: analyzing: file:///root/ros_ws/src/assignment_2_2023/scripts/action_client_node.py (3424ms)
+2024-02-28 09:39:06.989 [info] [Info  - 9:39:06 AM] (575) [IDX(2)] Long operation: scan packages file:///root/ros_ws/src/assignment_2_2023 (20583ms)
+2024-02-28 09:39:07.007 [info] [Info  - 9:39:07 AM] (575) scanned(2) 477 files over 1 exec env
+2024-02-28 09:39:23.121 [info] [Info  - 9:39:23 AM] (575) [IDX(2)] Long operation: index packages file:///root/ros_ws/src/assignment_2_2023 (2021ms)
+2024-02-28 09:39:23.121 [info] [Info  - 9:39:23 AM] (575) indexed(2) 159 files over 1 exec env
+2024-02-28 09:39:24.633 [info] [Info  - 9:39:24 AM] (575) Indexing finished(2).
+2024-02-28 10:07:27.126 [info] [Error - 10:07:27 AM] Server process exited with code 0.

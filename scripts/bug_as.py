@@ -45,7 +45,7 @@ def clbk_odom(msg):
         msg.pose.pose.orientation.w)
     euler = transformations.euler_from_quaternion(quaternion)
     yaw_ = euler[2]
-
+ 
 
 def clbk_laser(msg):
     global regions_
@@ -79,7 +79,8 @@ def normalize_angle(angle):
     if(math.fabs(angle) > math.pi):
         angle = angle - (2 * math.pi * angle) / (math.fabs(angle))
     return angle
-    
+
+   
 def done():
     twist_msg = Twist()
     twist_msg.linear.x = 0
@@ -90,6 +91,7 @@ def done():
 def planning(goal):
     global regions_, position_, desired_position_, state_, yaw_, yaw_error_allowed_
     global srv_client_go_to_point_, srv_client_wall_follower_, act_s, pose_
+    
     change_state(0)
     rate = rospy.Rate(20)
     success = True
@@ -170,11 +172,15 @@ def main():
     sub_laser = rospy.Subscriber('/scan', LaserScan, clbk_laser)
     sub_odom = rospy.Subscriber('/odom', Odometry, clbk_odom)
     pub = rospy.Publisher('/cmd_vel', Twist, queue_size=1)
+
     srv_client_go_to_point_ = rospy.ServiceProxy(
         '/go_to_point_switch', SetBool)
+    
     srv_client_wall_follower_ = rospy.ServiceProxy(
         '/wall_follower_switch', SetBool)
+    
     act_s = actionlib.SimpleActionServer('/reaching_goal', assignment_2_2023.msg.PlanningAction, planning, auto_start=False)
+
     act_s.start()
    
     # initialize going to the point
@@ -183,6 +189,7 @@ def main():
     rate = rospy.Rate(20)
     while not rospy.is_shutdown():
         rate.sleep()
+ 
     
 if __name__ == "__main__":
     main()

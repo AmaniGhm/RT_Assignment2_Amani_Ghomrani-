@@ -1,0 +1,4 @@
+[proc] Executing command: cmake --version
+[proc] Executing command: cmake -E capabilities
+[variant] Loaded new set of variants
+[kit] Successfully loaded 2 kits from /root/.local/share/CMakeTools/cmake-tools-kits.json

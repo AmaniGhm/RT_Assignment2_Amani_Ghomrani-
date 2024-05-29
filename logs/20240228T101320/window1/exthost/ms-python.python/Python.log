@@ -1,0 +1,10 @@
+2024-02-28 10:13:39.957 [info] Experiment 'pythonaa' is active
+2024-02-28 10:13:39.957 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2024-02-28 10:13:39.957 [info] Experiment 'pythonREPLSmartSend' is active
+2024-02-28 10:13:39.957 [info] Experiment 'pythonSurveyNotificationcf' is active
+2024-02-28 10:13:39.957 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2024-02-28 10:13:39.957 [info] Experiment 'pythonTestAdapter' is active
+2024-02-28 10:13:39.957 [info] Default formatter is set to null for workspace /root/ros_ws/src/assignment_2_2023
+2024-02-28 10:13:39.957 [info] Test server listening.
+2024-02-28 10:13:39.957 [info] Python interpreter path: /bin/python3
+2024-02-28 10:13:58.121 [info] Starting Pylance language server.

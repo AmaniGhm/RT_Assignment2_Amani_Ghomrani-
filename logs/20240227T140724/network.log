@@ -1,0 +1,3 @@
+2024-02-27 14:07:51.065 [error] electron #9: https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/cmake-tools/1.17.16/1708459088712/Microsoft.VisualStudio.Code.Manifest - error GET net::ERR_INSUFFICIENT_RESOURCES
+2024-02-27 14:07:51.075 [error] electron #10: https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/cpptools/1.19.4/1708571725419/Microsoft.VisualStudio.Code.Manifest?targetPlatform=linux-x64 - error GET net::ERR_INSUFFICIENT_RESOURCES
+2024-02-27 14:07:53.758 [error] electron #14: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST net::ERR_INSUFFICIENT_RESOURCES

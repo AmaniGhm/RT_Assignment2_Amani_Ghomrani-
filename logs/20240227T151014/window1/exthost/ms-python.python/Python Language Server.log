@@ -1,0 +1,23 @@
+2024-02-27 15:10:49.941 [info] (Client) Pylance async client (2024.2.2) started with python extension (2024.0.1)
+2024-02-27 15:10:57.775 [info] [Info  - 3:10:57 PM] (3385) Pylance language server 2024.2.2 (pyright version 1.1.348, commit cfb1de0c) starting
+2024-02-27 15:10:58.081 [info] [Info  - 3:10:58 PM] (3385) Server root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist
+2024-02-27 15:10:58.128 [info] [Info  - 3:10:58 PM] (3385) Starting service instance "assignment_2_2023"
+2024-02-27 15:10:59.902 [info] [Info  - 3:10:59 PM] (3385) Setting pythonPath for service "assignment_2_2023": "/bin/python3"
+2024-02-27 15:11:00.110 [info] [Info  - 3:11:00 PM] (3385) Setting environmentName for service "assignment_2_2023": "3.8.5 (global)"
+2024-02-27 15:11:00.464 [info] [Info  - 3:11:00 PM] (3385) Assuming Python version 3.8
+2024-02-27 15:11:02.430 [info] [Info  - 3:11:02 PM] (3385) Found 9 source files
+2024-02-27 15:11:06.290 [info] [Info  - 3:11:06 PM] (3385) [FG] Long operation: parsing: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist/typeshed-fallback/stdlib/builtins.pyi (2108ms)
+2024-02-27 15:11:07.517 [info] [Info  - 3:11:07 PM] (3385) Background analysis(1) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist
+2024-02-27 15:11:07.570 [info] [Info  - 3:11:07 PM] (3385) Background analysis(1) started
+2024-02-27 15:11:12.305 [info] [Info  - 3:11:12 PM] (3385) [BG(1)] Long operation: parsing: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist/typeshed-fallback/stdlib/builtins.pyi (2327ms)
+2024-02-27 15:11:14.749 [info] [Info  - 3:11:14 PM] (3385) Indexer background runner(2) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist (index)
+2024-02-27 15:11:14.751 [info] [Info  - 3:11:14 PM] (3385) Indexing(2) started
+2024-02-27 15:11:33.969 [info] [Info  - 3:11:33 PM] (3385) [BG(1)] Long operation: getSemanticTokens range 0:0 - 62:26 at file:///root/ros_ws/src/assignment_2_2023/scripts/action_client_node.py (25528ms)
+2024-02-27 15:11:36.853 [info] [Info  - 3:11:36 PM] (3385) [IDX(2)] Long operation: scan packages file:///root/ros_ws/src/assignment_2_2023 (21943ms)
+2024-02-27 15:11:36.855 [info] [Info  - 3:11:36 PM] (3385) scanned(2) 477 files over 1 exec env
+2024-02-27 15:11:57.597 [info] [Info  - 3:11:57 PM] (3385) [IDX(2)] Long operation: indexing: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist/typeshed-fallback/stubs/networkx/networkx/__init__.pyi (2890ms)
+2024-02-27 15:12:04.246 [info] [Info  - 3:12:04 PM] (3385) [IDX(2)] Long operation: indexing: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist/bundled/stubs/pandas/__init__.pyi (2650ms)
+2024-02-27 15:12:14.213 [info] [Info  - 3:12:14 PM] (3385) [IDX(2)] Long operation: index execution environment file:///root/ros_ws/src/assignment_2_2023 (25626ms)
+2024-02-27 15:12:14.559 [info] [Info  - 3:12:14 PM] (3385) [IDX(2)] Long operation: index packages file:///root/ros_ws/src/assignment_2_2023 (26217ms)
+2024-02-27 15:12:14.560 [info] [Info  - 3:12:14 PM] (3385) indexed(2) 159 files over 1 exec env
+2024-02-27 15:12:15.876 [info] [Info  - 3:12:15 PM] (3385) Indexing finished(2).
