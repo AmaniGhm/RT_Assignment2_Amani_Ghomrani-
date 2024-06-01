@@ -1,4 +1,19 @@
 #! /usr/bin/env python
+"""
+.. module:: assignment1
+   :platform: unix
+   :synopsis: A ROS node for moving the robot to a specified point.
+.. moduleauthor:: Amani Ghomrani <angho34@gmail.com>
+
+Subscribes to:
+    /odom
+
+Publishes to:
+    /cmd_vel
+
+Services:
+    /go_to_point_switch
+"""
 
 # import ros stuff
 import rospy
@@ -41,6 +56,13 @@ pub = None
 
 
 def go_to_point_switch(req):
+    """
+    Service callback to activate/deactivate the go to point behavior.
+    :param req: The request message containing the activation state.
+    :type req: std_srvs.srv.SetBoolRequest
+    :return: The response indicating success.
+    :rtype: std_srvs.srv.SetBoolResponse
+    """
     global active_
     active_ = req.data
     res = SetBoolResponse()
@@ -52,6 +74,15 @@ def go_to_point_switch(req):
 
 
 def clbk_odom(msg):
+    """
+    Callback function for the /odom topic.
+
+    This function processes the incoming odometry messages to update the robot's position and orientation.
+
+    :param msg: The odometry message.
+    :type msg: nav_msgs.msg.Odometry
+    """
+    
     global position_
     global yaw_
 
@@ -69,18 +100,42 @@ def clbk_odom(msg):
 
 
 def change_state(state):
+    """
+    Change the state of the state machine.
+
+    This function changes the state and logs the new state.
+
+    :param state: The new state.
+    :type state: int
+    """
     global state_
     state_ = state
     print ('State changed to [%s]' % state_)
 
 
 def normalize_angle(angle):
+    """
+    Normalize an angle to the range [-pi, pi].
+
+    :param angle: The angle to normalize.
+    :type angle: float
+    :return: The normalized angle.
+    :rtype: float
+    """
     if(math.fabs(angle) > math.pi):
         angle = angle - (2 * math.pi * angle) / (math.fabs(angle))
     return angle
 
 
 def fix_yaw(des_pos):
+    """
+    Rotate the robot to face the desired position.
+
+    This function calculates the yaw error and publishes the necessary angular velocity to correct it.
+
+    :param des_pos: The desired position.
+    :type des_pos: geometry_msgs.msg.Point
+    """
     global yaw_, pub, yaw_precision_2_, state_
     desired_yaw = math.atan2(des_pos.y - position_.y, des_pos.x - position_.x)
     err_yaw = normalize_angle(desired_yaw - yaw_)
@@ -104,6 +159,14 @@ def fix_yaw(des_pos):
 
 
 def go_straight_ahead(des_pos):
+    """
+    Move the robot straight towards the desired position.
+
+    This function calculates the positional error and publishes the necessary linear and angular velocities to correct it.
+
+    :param des_pos: The desired position.
+    :type des_pos: geometry_msgs.msg.Point
+    """
     global yaw_, pub, yaw_precision_, state_
     desired_yaw = math.atan2(des_pos.y - position_.y, des_pos.x - position_.x)
     err_yaw = desired_yaw - yaw_
@@ -129,6 +192,9 @@ def go_straight_ahead(des_pos):
 
 
 def done():
+    """
+    Stop the robot by publishing zero velocities.
+    """
     twist_msg = Twist()
     twist_msg.linear.x = 0
     twist_msg.angular.z = 0
@@ -136,6 +202,9 @@ def done():
                 
 
 def main():
+    """
+    Main function to initialize the node, set up subscribers, publishers, and services, and control the state machine.
+    """
     global pub, active_
 
     rospy.init_node('go_to_point')

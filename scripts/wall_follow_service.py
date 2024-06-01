@@ -1,4 +1,26 @@
 #! /usr/bin/env python
+"""
+.. module:: assignment1
+   :platform: unix
+   :synopsis: ROS node that implements a simple wall follower behavior.
+.. moduleauthor:: Amani Ghomrani  <angho34@gmail.com>
+
+Subscribes to:
+    /scan (sensor_msgs/LaserScan): Laser scan data.
+
+Publishes to:
+    /cmd_vel (geometry_msgs/Twist): Twist commands for the robot.
+
+Services:
+    wall_follower_switch (std_srvs/SetBool): Service to activate/deactivate the wall follower behavior.
+
+Description:
+    This node implements a basic wall follower behavior using a scanning laser sensor. 
+    It divides the laser scan into five regions (front, front-left, front-right, left, right) 
+    and takes actions based on the minimum range values in each region. The node can be 
+    activated and deactivated using a service named `wall_follower_switch`.
+   
+"""
 
 import rospy
 from sensor_msgs.msg import LaserScan
@@ -27,7 +49,31 @@ state_dict_ = {
 }
 
 
+def init_():
+    """
+    Initialize the ROS node and set up publishers, subscribers, and services.
+    """
+    global pub_, active_
+
+    rospy.init_node('reading_laser')
+
+    pub_ = rospy.Publisher('/cmd_vel', Twist, queue_size=1)
+
+    sub = rospy.Subscriber('/scan', LaserScan, clbk_laser)
+
+    srv = rospy.Service('wall_follower_switch', SetBool, wall_follower_switch)
+
+
 def wall_follower_switch(req):
+    """
+    Callback function for the /wall_follower_switch service.
+
+    Args:
+        req (SetBool): Service request containing the activation/deactivation command.
+
+    Returns:
+        SetBoolResponse: Service response indicating success and a message.
+    """
     global active_
     active_ = req.data
     res = SetBoolResponse()
@@ -37,6 +83,17 @@ def wall_follower_switch(req):
 
 
 def clbk_laser(msg):
+    """
+    Callback function for the /scan topic.
+
+    This function updates the `regions_` dictionary with the minimum range values 
+    in each of the five defined regions (right, front-right, front, front-left, left).
+    It then calls the `take_action` function to determine the appropriate movement 
+    based on the sensor readings.
+
+    Args:
+        msg (LaserScan): Laser scan data message.
+    """
     global regions_
     regions_ = {
         'right': min(min(msg.ranges[0:143]), 10),
@@ -50,6 +107,13 @@ def clbk_laser(msg):
 
 
 def change_state(state):
+    """
+    Updates the current state of the wall follower and prints a message indicating 
+    the state transition.
+
+    Args:
+        state (int): The new state of the wall follower (0: find the wall, 1: turn left, 2: follow the wall).
+    """
     global state_, state_dict_
     if state is not state_:
         print ('Wall follower - [%s] - %s' % (state, state_dict_[state]))
@@ -57,6 +121,15 @@ def change_state(state):
 
 
 def take_action():
+    """
+    This function analyzes the minimum range values in each region (`regions_`) 
+    and determines the appropriate movement command for the robot based on pre-defined 
+    conditions. It then publishes the calculated twist message (`msg`) to the `/cmd_vel` topic.
+
+    The function defines several cases based on the sensor readings and sets the 
+    linear and angular velocities (`linear_x` and `angular_z`) accordingly. 
+    A state description variable (`state_description`) is used for logging purposes.
+    """
     global regions_
     regions = regions_
     msg = Twist()
@@ -97,6 +170,9 @@ def take_action():
 
 
 def find_wall():
+    """
+    This function set a linear and angular velocity ro find the wall
+    """
     msg = Twist()
     msg.linear.x = 0.2
     msg.angular.z = -0.3
@@ -104,30 +180,30 @@ def find_wall():
 
 
 def turn_left():
+    """
+    This function set an angular velocity to make the robot turn left
+    """
     msg = Twist()
     msg.angular.z = 0.3
     return msg
 
 
 def follow_the_wall():
+    """
+    This function set an lineaer velocity to make the robot follow the wall
+    """
     global regions_
 
     msg = Twist()
     msg.linear.x = 0.5
     return msg
 
-
 def main():
-    global pub_, active_
-
-    rospy.init_node('reading_laser')
-
-    pub_ = rospy.Publisher('/cmd_vel', Twist, queue_size=1)
-
-    sub = rospy.Subscriber('/scan', LaserScan, clbk_laser)
-
-    srv = rospy.Service('wall_follower_switch', SetBool, wall_follower_switch)
-
+    """
+    This function handles the robot rotation and linear velocity to make it follow the wall
+    """
+    init_()
+    
     rate = rospy.Rate(20)
     while not rospy.is_shutdown():
         if not active_:

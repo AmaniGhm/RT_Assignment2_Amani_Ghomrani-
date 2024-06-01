@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: assignment_2_2023
+Description: Description of assignment_2_2023
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/root/ros_ws/src/assignment_2_2023/build/devel
+
+Name: assignment_2_2023
+Description: Description of assignment_2_2023
+Version: 0.0.0
+Cflags: -I/root/ros_ws/src/assignment_2_2023/build/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

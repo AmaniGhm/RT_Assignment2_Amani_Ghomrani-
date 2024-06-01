@@ -1,4 +1,22 @@
 #! /usr/bin/env python
+"""
+.. module:: assignment1
+   :platform: unix
+   :synopsis: A ROS node for implementing a state machine that controls a robot's movement.
+
+.. moduleauthor:: Amani Ghomrani <angho34@gmail.com>
+
+Subscribes to:
+    /scan
+    /odom
+
+Publishes to:
+    /cmd_vel
+
+Services:
+    /go_to_point_switch
+    /wall_follower_switch
+"""
 
 import rospy
 from geometry_msgs.msg import Point, Pose, Twist
@@ -31,6 +49,14 @@ state_ = 0
 
 
 def clbk_odom(msg):
+    """
+    Callback function for the /odom topic.
+
+    This function processes the incoming odometry messages to update the robot's position and orientation.
+
+    :param msg: The odometry message.
+    :type msg: nav_msgs.msg.Odometry
+    """
     global position_, yaw_, pose_
 
     # position
@@ -48,6 +74,14 @@ def clbk_odom(msg):
  
 
 def clbk_laser(msg):
+    """
+    Callback function for the /scan topic.
+
+    This function processes the incoming laser scan messages to update the regions around the robot.
+
+    :param msg: The laser scan message.
+    :type msg: sensor_msgs.msg.LaserScan
+    """
     global regions_
     regions_ = {
         'right':  min(min(msg.ranges[0:143]), 10),
@@ -59,6 +93,14 @@ def clbk_laser(msg):
 
 
 def change_state(state):
+    """
+    Change the state of the state machine.
+
+    This function changes the state and calls the appropriate services to enable or disable behaviors.
+
+    :param state: The new state.
+    :type state: int
+    """
     global state_, state_desc_
     global srv_client_wall_follower_, srv_client_go_to_point_
     state_ = state
@@ -76,12 +118,23 @@ def change_state(state):
 
 
 def normalize_angle(angle):
+    """
+    Normalize an angle to the range [-pi, pi].
+
+    :param angle: The angle to normalize.
+    :type angle: float
+    :return: The normalized angle.
+    :rtype: float
+    """
     if(math.fabs(angle) > math.pi):
         angle = angle - (2 * math.pi * angle) / (math.fabs(angle))
     return angle
 
    
 def done():
+    """
+    Stop the robot by publishing zero velocities.
+    """
     twist_msg = Twist()
     twist_msg.linear.x = 0
     twist_msg.angular.z = 0
@@ -89,6 +142,14 @@ def done():
     
     
 def planning(goal):
+    """
+    Execute the planning algorithm.
+
+    This function controls the robot to reach the target goal while avoiding obstacles.
+
+    :param goal: The target goal.
+    :type goal: assignment_2_2023.msg.PlanningGoal
+    """
     global regions_, position_, desired_position_, state_, yaw_, yaw_error_allowed_
     global srv_client_go_to_point_, srv_client_wall_follower_, act_s, pose_
     change_state(0)
@@ -158,6 +219,9 @@ def planning(goal):
     
 
 def main():
+    """
+    Main function to initialize the node and set up subscribers, publishers, and services.
+    """
     time.sleep(2)
     global regions_, position_, desired_position_, state_, yaw_, yaw_error_allowed_
     global srv_client_go_to_point_, srv_client_wall_follower_, act_s, pub

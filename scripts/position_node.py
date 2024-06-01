@@ -1,4 +1,24 @@
 #! /usr/bin/env python
+"""
+.. module:: assignment1
+   :platform: unix
+   :synopsis: ROS node that prints updates on the robot's position and velocity.
+.. moduleauthor:: Amani Ghomrani <angho34@gmail.com>
+
+Subscribes to:
+    /robot_state
+
+Publishes to:
+    None
+
+Services:
+    distance_velocity_from_target
+
+Description:
+    This ROS node subscribes to the /robot_state topic to receive updates on the robot's position and velocity.
+    It calculates the distance from a target position and the average speed of the robot, printing this information
+    periodically. Additionally, it provides a service to retrieve the current distance and average speed.
+"""
 
 import rospy
 import math
@@ -12,6 +32,14 @@ distance = 0
 average_speed = 0
 
 def print_robot_info(msg):
+    """
+    Callback function for the /robot_state topic subscriber. It calculates the distance from the target
+    position and the average speed of the robot, then prints this information periodically based on the
+    frequency parameter.
+
+    Args:
+        msg (RobotState): Message containing the current state of the robot, including position and velocity.
+    """
     global previous_print_time, frequency_param, distance, average_speed
     time_period = (1.0/frequency_param) * 1000
     current_time = time.time() * 1000
@@ -36,6 +64,15 @@ def print_robot_info(msg):
         previous_print_time = current_time
 
 def dist_velocity_callbk(rsp):
+    """
+    Service callback function to handle requests for the robot's distance from the target
+    and its average speed.
+
+    :param rsp: Request from the GetDistSpeed service.
+    :type rsp: GetDistSpeedRequest
+    :return: Response containing the distance and average speed of the robot.
+    :rtype: GetDistSpeedResponse
+    """
     global distance, average_speed
 
     # Service callback to update the distace and the average speed of the robot
@@ -45,6 +82,9 @@ def dist_velocity_callbk(rsp):
     return response
 
 if __name__ == "__main__":
+    """
+    Main function to initialize the ROS node, set up the service, and subscribe to the /robot_state topic.
+    """
     rospy.init_node('rob_position')
 
     # service that store the velocity and average speed of the robot
